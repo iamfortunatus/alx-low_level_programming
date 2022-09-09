@@ -10,18 +10,18 @@ int main(void)
 	int i;
 	int n;
 
-		for (i = 0; i <= 9; i++)
-   		 {
-		 for (n = 0; n <= 9; n++)
+	for (i = 0; i <= 9; i++)
+   	{
+		for (n = 0; n <= 9; n++)
 	{
 	  putchar(i + '0');
 	  putchar(n + '0');
 
-	  if (!(i == 9 && n == 9))
-	    {
+	if (!(i == 9 && n == 9))
+	{
 	      putchar(',');
 	      putchar(' ');
-	    }
+	}
 	}
     }
   putchar('\n');
