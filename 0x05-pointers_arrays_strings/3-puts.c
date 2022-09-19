@@ -5,13 +5,13 @@
  * Return: void
  */
 
-void _puts(char *udev)
+void _puts(char *str)
 {
-	int i = 0;
+	int udev = 0;
 
-	while (udev[i] != '\0')
+	while (str[udev] != '\0')
 	{
-		_putchar(udev[i]);
+		_putchar(str[udev]);
 		i++;
 	}
 
