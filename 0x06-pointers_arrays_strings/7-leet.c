@@ -3,7 +3,7 @@
 /**
  * leet - encode into 1337speak
  * @str: input value
- * Return: s value
+ * Return: str value
  */
 
 char *leet(char *str)
@@ -17,7 +17,7 @@ char *leet(char *str)
 	{
 		for (a = 0; a < 5; a++)
 		{
-			if (*(str + count) == low_array[i] || *(str + count) == upper_array[i])
+			if (*(str + count) == low_array[a] || *(str + count) == upper_array[a])
 			{
 				*(str + count) = num_array[a];
 				break;
