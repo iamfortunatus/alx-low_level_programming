@@ -8,12 +8,11 @@
  * Return: the pointer to dest.
  */
 
-char *_memset(char *s, char b, unsigned int n)
+char *_memset(char *str, char b, unsigned int n)
 {
 	unsigned int i;
 
-	for (i = 0; i < n; i++)
-		*(s + i) =  b;
-
-	return (s);
+	for (i = 0; i < n ; ++i)
+		*(str + i) = b;
+	return (str);
 }
