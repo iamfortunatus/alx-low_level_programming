@@ -1,17 +1,29 @@
 #include "main.h"
 
 /**
- * _pow_recursion - returns the value of x raised to the power of y.
- * @x: base.
- * @y: exponent.
- * Return: value of the exponentiation.
+ * _sqrt - compute the square root of a number
+ *
+ * @num: the number to compute
+ * @i: number to test for square root
+ *
+ * Return: square root of @num, or -1 if no root found
  */
-int _pow_recursion(int x, int y)
+int _sqrt(int num, int i)
 {
-	if (y < 0)
+	if (i * i > num)
 		return (-1);
-	else if (y == 0)
-		return (1);
-	else
-		return (x * _pow_recursion(x, y - 1));
+	else if (i * i == num)
+		return (i);
+	return (_sqrt(num, i + 1));
+}
+/**
+ * _sqrt_recursion - compute the sqrt of a number
+ *
+ * @num: the number to compute
+ *
+ * Return: return value from _sqrt
+ */
+int _sqrt_recursion(int num)
+{
+	return (_sqrt(num, 1));
 }
