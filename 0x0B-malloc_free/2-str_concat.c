@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	ufirst = dev = 0;
 	while (s1[ufirst] != '\0')
-		dev++;
+		ufirst++;
 	while (s2[dev] != '\0')
 		dev++;
 
