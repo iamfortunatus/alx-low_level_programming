@@ -149,9 +149,9 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 	while (*(final_prod + 1))
 		final_prod++;
 
-	while (*(next_prod + 1))
+OAOAOAOA	while (*(next_prod + 1))
 		next_prod++;
-
+OAOAOAOA
 	for (; *final_prod != 'x'; final_prod--)
 	{
 		num = (*final_prod - '0') + (*next_prod - '0');
@@ -163,8 +163,8 @@ void add_nums(char *final_prod, char *next_prod, int next_len)
 		next_len--;
 	}
 
-	for (; next_len >= 0 && *next_prod != 'x'; next_len--)
-	{
+OAOAOAOAOAOAOAOAOAOAOAOA	for (; next_len >= 0 && *next_prod != 'x'; next_len--)
+OAOAOAOAOAOAOAOA	{
 		num = (*next_prod - '0');
 		num += tens;
 		*final_prod = (num % 10) + '0';
@@ -230,4 +230,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
